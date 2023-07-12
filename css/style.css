@@ -1,0 +1,672 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+:root {
+  --main-color: greenyellow;
+  --mian-font: sail;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "DM Serif Display", serif;
+  letter-spacing: 3px;
+  color: black;
+  position: relative;
+  border: 3px solid black;
+  padding: 10px;
+}
+
+/*========== End Global ==========*/
+
+#header {
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/bg.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.6)),
+      to(rgba(0, 0, 0, 0.6))
+    ),
+    url("../img/bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#header .navbar .nav-link {
+  color: white;
+  white-space: nowrap;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+#header .navbar .nav-item .nav-link::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-top: 1px solid greenyellow;
+  width: 0%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#header .navbar .nav-item .nav-link:hover:after {
+  width: 90%;
+}
+
+#header .navbar .nav-item .nav-link::before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-top: 1px solid greenyellow;
+  width: 0%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#header .navbar .nav-item .nav-link:hover:before {
+  width: 90%;
+}
+
+#header .navbar .nav-link:hover,
+#header .navbar .active {
+  color: greenyellow;
+}
+#header .navbar .nav-item button {
+  border: 0;
+  outline: 1px solid var(--main-color);
+  background-color: transparent;
+  color: white;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#header .navbar .nav-item button:hover {
+  background-color: var(--main-color);
+  color: black;
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+#header .text {
+  min-height: 80vh;
+  color: white;
+}
+#header .text h1 {
+  font-family: var(--mian-font);
+}
+
+#header .text h5 {
+  background-color: black;
+  border-radius: 20px;
+}
+
+#header .text h5 a {
+  color: white;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#header .text h5 a:hover {
+  color: var(--main-color);
+}
+#header .text .icon span {
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#header .text .icon span a {
+  height: 40px;
+  width: 40px;
+}
+#header .text .icon span a i {
+  font-size: 20px;
+  color: white;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#header .text .icon span:hover {
+  background-color: var(--main-color);
+}
+#header .text .icon span:hover i {
+  color: black;
+}
+
+#header .text button {
+  border: 0;
+  outline: 1px solid var(--main-color);
+  background-color: transparent;
+  color: white;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#header .text button.active {
+  background-color: var(--main-color);
+  color: black;
+}
+#header .text button:hover {
+  background-color: var(--main-color);
+  color: black;
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+/*========== End header ==========*/
+#about {
+  background-color: rgb(245, 245, 245);
+  overflow-x: hidden;
+}
+#about .title:before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: 5%;
+  background-color: rgb(245, 245, 245);
+  width: 25px;
+  height: 25px;
+}
+#about .title:after {
+  content: "";
+  position: absolute;
+  bottom: -20%;
+  right: 5%;
+  background-color: rgb(245, 245, 245);
+  width: 25px;
+  height: 25px;
+}
+/*========== End About ==========*/
+#services .title:before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: 5%;
+  background-color: white;
+  width: 25px;
+  height: 25px;
+}
+#services .title:after {
+  content: "";
+  position: absolute;
+  bottom: -20%;
+  right: 5%;
+  background-color: white;
+  width: 25px;
+  height: 25px;
+}
+
+#services .item .layer {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  width: 96%;
+  height: 96%;
+  background-color: rgba(255, 255, 255, 0.733);
+  scale: 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+#services .item:hover .layer {
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+  scale: 1;
+}
+
+#services .item .layer .container .row .icon {
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#services .item .layer .container .row .icon span {
+  cursor: pointer;
+}
+#services .item .layer .container .row .icon:hover {
+  background-color: greenyellow;
+}
+#services .item .layer .text-icon {
+  font-family: woff;
+}
+#timer {
+  min-height: 50vh;
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/timer.jpeg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.7)),
+      to(rgba(0, 0, 0, 0.7))
+    ),
+    url("../img/timer.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/timer.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+#timer span {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#timer .home-icon:hover {
+  background-color: var(--main-color);
+}
+
+#timer i {
+  color: black;
+  font-size: 60px;
+}
+#timer .text-icon {
+  color: white;
+}
+#timer .number {
+  font-size: 35px;
+  color: var(--main-color);
+  font-weight: bolder;
+}
+
+/*========== End Timer ==========*/
+#team {
+  background-color: rgb(245, 245, 245);
+  overflow-x: hidden;
+}
+#team .title:before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: 5%;
+  background-color: rgb(245, 245, 245);
+  width: 25px;
+  height: 25px;
+}
+#team .title:after {
+  content: "";
+  position: absolute;
+  bottom: -20%;
+  right: 5%;
+  background-color: rgb(245, 245, 245);
+  width: 25px;
+  height: 25px;
+}
+
+#team .card button {
+  border: 0;
+  outline: 3px solid var(--main-color);
+  background-color: transparent;
+  color: black;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#team .card .layer {
+  background-color: rgba(0, 0, 0, 0.685);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#team .card button.active {
+  background-color: var(--main-color);
+  color: black;
+}
+#team .card button {
+  position: relative;
+}
+#team .card button::before {
+  content: "Get More";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: var(--main-color);
+  height: 100%;
+  width: 0%;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#team .card button:hover:before {
+  width: 100%;
+  scale: 0.95;
+}
+#team .card {
+  overflow: hidden;
+}
+#team .card .layer {
+  left: 100%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#team .card:hover .layer {
+  left: 0;
+}
+
+#team .card .layer .icon span {
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#team .card .layer .icon span a {
+  height: 40px;
+  width: 40px;
+}
+#team .card .layer .icon span a i {
+  font-size: 20px;
+  color: white;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#team .card .layer .icon span:hover {
+  background-color: var(--main-color);
+}
+#team .card .layer .icon span:hover i {
+  color: black;
+}
+#team .card .home img {
+  width: 100%;
+}
+#team .card .home {
+  overflow: hidden;
+}
+/*========== End Team ==========*/
+
+#blog .title:before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: 5%;
+  background-color: white;
+  width: 25px;
+  height: 25px;
+}
+#blog .title:after {
+  content: "";
+  position: absolute;
+  bottom: -20%;
+  right: 5%;
+  background-color: white;
+  width: 25px;
+  height: 25px;
+}
+
+#blog .card button {
+  border: 0;
+  outline: 3px solid var(--main-color);
+  background-color: transparent;
+  color: black;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: bold;
+  position: relative;
+  z-index: 555;
+  transition: 0.5s;
+}
+#blog .card button::before {
+  content: "Get More";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: var(--main-color);
+  height: 100%;
+  width: 0%;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#blog .card button:hover:before {
+  width: 100%;
+  scale: 0.95;
+}
+
+/*========== End Blog ==========*/
+#contact {
+  background-color: rgb(245, 245, 245);
+}
+
+#contact .title:before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: 5%;
+  background-color: rgb(245, 245, 245);
+  width: 25px;
+  height: 25px;
+}
+#contact .title:after {
+  content: "";
+  position: absolute;
+  bottom: -20%;
+  right: 5%;
+  background-color: rgb(245, 245, 245);
+  width: 25px;
+  height: 25px;
+}
+#contact button {
+  border: 0;
+  outline: 3px solid var(--main-color);
+  background-color: transparent;
+  color: black;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: bold;
+  position: relative;
+  z-index: 555;
+  transition: 0.5s;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+#contact button:hover {
+  scale: 0.95;
+  background-color: var(--main-color);
+}
+
+#contact input,
+#contact textarea {
+  padding: 5px 15px;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border: 2px solid var(--main-color);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/*========== End contact ==========*/
+#last-block {
+  background-color: #0f172b;
+}
+#last-block .item .main {
+  color: var(--main-color);
+  font-family: var(--mian-font);
+  text-align: left;
+}
+#last-block .item li {
+  padding: 10px 0;
+  text-align: left;
+}
+#last-block .item li a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#last-block .item li a:hover {
+  color: var(--main-color);
+}
+#last-block .item i {
+  color: var(--main-color);
+  margin-left: -30px;
+}
+#last-block .item input {
+  border: 1px solid var(--main-color);
+}
+#last-block .item input::-webkit-input-placeholder {
+  color: black;
+  white-space: nowrap;
+}
+#last-block .item input::-moz-placeholder {
+  color: black;
+  white-space: nowrap;
+}
+#last-block .item input:-ms-input-placeholder {
+  color: black;
+  white-space: nowrap;
+}
+#last-block .item input::-ms-input-placeholder {
+  color: black;
+  white-space: nowrap;
+}
+#last-block .item input::placeholder {
+  color: black;
+  white-space: nowrap;
+}
+
+#last-block .item button {
+  border: 0;
+  outline: 1px solid var(--main-color);
+  background-color: transparent;
+  color: white;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#last-block .item button:hover {
+  background-color: var(--main-color);
+  color: black;
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+/*========== Media Query ==========*/
+@media screen and (min-width: 320px) and (max-width: 470px) {
+  #services .layer {
+    font-size: 13px;
+  }
+  #services .layer p {
+    padding: 0 5px;
+  }
+  #services .layer span {
+    width: 25px;
+    height: 25px;
+  }
+  #services .layer h3 {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  #services .layer .text-icon {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar .navbar-nav {
+    background-color: black;
+    padding: 20px 0px;
+  }
+
+  .navbar .nav-item .nav-link {
+    padding: 15px 100px;
+  }
+  .navbar .nav-item button {
+    margin-top: 20px;
+  }
+  #last-block .item {
+    padding-left: 15px;
+  }
+}
